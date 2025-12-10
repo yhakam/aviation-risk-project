@@ -1,0 +1,16 @@
+requests
+pandas
+numpy
+sqlalchemy
+scikit-learn
+xgboost
+lightgbm
+shap
+streamlit
+plotly
+folium
+pydeck
+pytz
+tqdm
+python-dateutil
+joblib
