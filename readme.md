@@ -62,3 +62,102 @@ This platform performs the first essential steps toward a scalable aviation risk
 
 ## 2. Repository Structure
 
+aviation-risk-project/
+│
+├── app/
+│ ├── api/ # Future FastAPI service
+│ └── streamlit/ # Future interactive dashboard
+│
+├── data/
+│ ├── raw/ # Raw OpenSky and METAR files
+│ └── processed/ # Enriched flight-weather datasets
+│
+├── notebooks/
+│ └── 01_eda_flights_enriched.ipynb
+│
+├── src/
+│ ├── ingestion/ # Data ingestion scripts
+│ ├── preprocessing/ # Data fusion pipeline
+│ ├── features/ # Feature engineering (upcoming)
+│ ├── models/ # Model training + evaluation (upcoming)
+│ ├── evaluation/ # Model diagnostics (upcoming)
+│ └── utils/ # Utility functions
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
+
+
+---
+
+## 3. Technologies Used
+
+- **Python 3.10+**
+- **Pandas, NumPy**
+- **Seaborn, Matplotlib**
+- **Requests**
+- **Scikit-Learn**
+- **XGBoost / LightGBM (upcoming)**
+- **SHAP explainability**
+- **Streamlit / FastAPI (upcoming)**
+
+This stack is aligned with common practices in data engineering and applied machine learning teams.
+
+---
+
+## 4. Current Capabilities
+
+- Fully automated collection of flight telemetry  
+- METAR ingestion with robust error handling  
+- Clean dataset merging with temporal alignment  
+- Unified flight-weather dataset of >10,000 rows per snapshot  
+- Initial exploratory data analysis  
+- Project-ready modular codebase  
+- Production-style repository layout  
+
+---
+
+## 5. Roadmap
+
+### ✓ Completed
+- Project structure  
+- Ingestion (OpenSky + METAR)  
+- Raw → Processed transformation  
+- Enriched dataset generation  
+- Setup for professional EDA  
+
+### 🔜 In Progress
+- Advanced EDA (correlations, distributions, anomalies)
+- Feature engineering (weather indexes, aircraft dynamics)
+- Model training and evaluation
+
+### 🚀 Coming Next
+- Real-time risk scoring  
+- Interactive dashboard  
+- Model explainability suite  
+- API for external integration  
+
+---
+
+## 6. Vision
+
+The long-term goal is to develop a **real-time aviation risk assessment engine** capable of:
+
+- detecting abnormal flight dynamics  
+- quantifying risk under adverse weather  
+- predicting potential incident scenarios  
+- assisting aviation safety teams in decision-making  
+
+The project follows industry-level engineering principles and aims to demonstrate  
+**machine learning applied to high-stakes, real-world systems.**
+
+---
+
+## 7. Author
+
+**Yassine Hakam**  
+Master's candidate in AI & Big Data  
+
+---
+
+# This project is built with high engineering standards and aims to meet expectations of top-tier universities and future aerospace employers.
