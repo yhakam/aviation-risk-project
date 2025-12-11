@@ -62,30 +62,48 @@ This platform performs the first essential steps toward a scalable aviation risk
 
 ## 2. Repository Structure
 
-aviation-risk-project/
-│
-├── app/
-│ ├── api/ # Future FastAPI service
-│ └── streamlit/ # Future interactive dashboard
-│
-├── data/
-│ ├── raw/ # Raw OpenSky and METAR files
-│ └── processed/ # Enriched flight-weather datasets
-│
-├── notebooks/
-│ └── 01_eda_flights_enriched.ipynb
-│
-├── src/
-│ ├── ingestion/ # Data ingestion scripts
-│ ├── preprocessing/ # Data fusion pipeline
-│ ├── features/ # Feature engineering (upcoming)
-│ ├── models/ # Model training + evaluation (upcoming)
-│ ├── evaluation/ # Model diagnostics (upcoming)
-│ └── utils/ # Utility functions
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
+The repository is organized following a modular, production-oriented layout
+commonly used in professional data science and machine learning projects.
+
+### Application Layer
+- `app/api/`  
+  REST API for real-time risk inference (FastAPI, upcoming)
+- `app/streamlit/`  
+  Interactive dashboard for visualization and monitoring (Streamlit, upcoming)
+
+### Data Layer
+- `data/raw/`  
+  Raw flight telemetry (OpenSky) and meteorological observations (METAR)
+- `data/processed/`  
+  Cleaned and enriched flight–weather datasets
+
+### Analysis & Research
+- `notebooks/01_eda_flights_enriched.ipynb`  
+  Exploratory data analysis of the enriched dataset
+
+### Core Pipeline
+- `src/ingestion/`  
+  Data collection scripts (OpenSky, METAR)
+- `src/preprocessing/`  
+  Data cleaning, alignment, and flight–weather fusion
+- `src/features/`  
+  Feature engineering and risk-related variable construction (upcoming)
+- `src/models/`  
+  Model training, inference, and serialization (upcoming)
+- `src/evaluation/`  
+  Model evaluation, diagnostics, and explainability (upcoming)
+- `src/utils/`  
+  Shared utility functions
+
+### Project Configuration
+- `requirements.txt`  
+  Python dependencies
+- `.gitignore`  
+  Git ignore rules
+- `README.md`  
+  Project documentation
+
+
 
 
 ---
@@ -101,7 +119,6 @@ aviation-risk-project/
 - **SHAP explainability**
 - **Streamlit / FastAPI (upcoming)**
 
-This stack is aligned with common practices in data engineering and applied machine learning teams.
 
 ---
 
@@ -126,12 +143,12 @@ This stack is aligned with common practices in data engineering and applied mach
 - Enriched dataset generation  
 - Setup for professional EDA  
 
-### 🔜 In Progress
+###  In Progress
 - Advanced EDA (correlations, distributions, anomalies)
 - Feature engineering (weather indexes, aircraft dynamics)
 - Model training and evaluation
 
-### 🚀 Coming Next
+###  Coming Next
 - Real-time risk scoring  
 - Interactive dashboard  
 - Model explainability suite  
